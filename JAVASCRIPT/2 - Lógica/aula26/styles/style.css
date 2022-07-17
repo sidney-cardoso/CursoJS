@@ -65,3 +65,12 @@ form button:active {
     background-color: var(--text-color);
     color: var(--green);
 }
+
+.result-paragraph-valid, .result-paragraph-invalid {
+    background-color: #1dcd1a;
+    padding: 10px 20px;
+    color: white;
+}
+.result-paragraph-invalid {
+    background-color: #931111;
+}
