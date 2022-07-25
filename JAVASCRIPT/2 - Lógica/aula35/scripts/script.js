@@ -1,20 +1,20 @@
 const elements = [
     { tag: 'p', text: 'This is a paragraph' },
     { tag: 'div', text: 'This is a div' },
-    { tag: 'footer', text: 'This is a footer' },
-    { tag: 'section', text: 'This is a section' }
+    { tag: 'section', text: 'This is a section' },
+    { tag: 'footer', text: 'This is a footer' }
 ]
 
+const container = document.querySelector('.container')
+const div = document.createElement('div')
 
-
-
-
-// ------------------------------------------------- MINHA SOLUÇÃO ------------------------------------------------- //
-/* 
 for (let i = 0; i < elements.length; i++) {
-    const container = document.querySelector('.container')
-    const element = document.createElement(elements[i].tag)
-    element.innerHTML = elements[i].text
-    container.appendChild(element)
+    let { tag, text } = elements[i]
+    let element = document.createElement(tag)
+    let nodeText = document.createTextNode(text)
+    // element.innerText = text
+    element.appendChild(nodeText)
+    div.appendChild(element)
 }
- */
+
+container.appendChild(div)
