@@ -24,9 +24,6 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
 }
-p {
-    text-align: justify;
-}
 .container {
     max-width: 700px;
     margin: 80px auto;
@@ -34,30 +31,52 @@ p {
     padding: 30px;
     border-radius: 10px;
 }
-form input, form label, form button {
-    display: block;
-    width: 100%;
+input, .add-task {
     height: 40px;
     border-radius: 4px;
     border: none;
     margin: 20px 0;
-
 }
-form input:focus {
+input {
+    width: 300px;
+}
+input:focus {
     outline: 2px solid #0e7134;
 }
-form button {
+#delete-task {
+    width: 40px;
+    height: 30px;
+    background: url('./trash.svg') no-repeat center;
+    background-size: contain;
+    border: none; 
+    cursor: pointer;
+}
+.add-task {
     background-color: var(--green);
     color: var(--text-color);
     font-weight: 700;
     cursor: pointer;
-    opacity: .6;
+    opacity: .9;
     transition: opacity .6s;
+    width: 200px;
 }
-form button:hover {
+.add-task:hover {
     opacity: 1;
 }
-form button:active {
+.add-task:active {
     background-color: var(--text-color);
     color: var(--green);
+}
+p {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
