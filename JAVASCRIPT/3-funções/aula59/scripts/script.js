@@ -2,13 +2,15 @@ function Calculator() {
     this.display = document.querySelector('.display')
     this.start = () => {
         this.getClicks()
-        this.getEnter()
+        // this.getEnter()
     }
+    /* 
     this.getEnter = () => {
         this.display.addEventListener('keypress', e => {
             if (e.keyCode === 13) this.equal()
         })
     }
+     */
     this.getClicks = () => {
         document.addEventListener('click', event => {
             const element = event.target
@@ -40,7 +42,7 @@ function Calculator() {
         this.display.focus()
     }
     this.deleteLastDigit = () => this.display.value = this.display.value.slice(0, -1)
-    this.clear = () => (this.display.value = '')
+    this.clear = () => this.display.value = ''
 }
 const calc = new Calculator()
 calc.start()

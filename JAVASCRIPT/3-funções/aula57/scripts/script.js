@@ -10,6 +10,10 @@ const createCalculator = () => {
             let result = this.display.value
             try {
                 result = eval(result)
+                if(result === 0 ) {
+                    this.display.value = '0'
+                    return
+                }
                 if (!result) {
                     alert('Conta inválida')
                     return
@@ -53,6 +57,8 @@ const createCalculator = () => {
         },
         buttonToDisplay(value) {
             this.display.value += value
+        this.display.focus()
+
         }
     }
 }

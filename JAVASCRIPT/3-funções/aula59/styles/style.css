@@ -41,11 +41,21 @@ p {
   margin: 0 auto;
 }
 
-
+input:disabled {
+  background-color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  color: #000;
+}
+input:focus {
+  outline: none;
+}
 .display {
   font-size: 2em;
   width: 100%;
+  text-align: right;
 }
+
 
 .button {
   width: 100%;
