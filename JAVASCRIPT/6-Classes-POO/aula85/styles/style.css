@@ -55,3 +55,8 @@ form button:active {
     background-color: var(--text-color);
     color: var(--green);
 }
+.error-message {
+    font-size: 14px;
+    color: rgb(204, 69, 69);
+    font-weight: 700;
+}
