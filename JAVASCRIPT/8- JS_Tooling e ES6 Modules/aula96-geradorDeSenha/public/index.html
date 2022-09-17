@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <section class="container">
+            <h1>Gerador de senha</h1>
+            <h2 class="show-password">Selecione as opções abaixo</h2>
+            <form>
+                <legend>
+                    <label for="characters">Quantidade de Caracteres</label
+                    ><input
+                        type="number"
+                        id="characters"
+                        class="quantity"
+                        min="4"
+                        max="20"
+                        value="20"
+                    />
+                </legend>
+
+                <legend>
+                    <label for="uppercase">Adicionar maiúsculas</label
+                    ><input
+                        type="checkbox"
+                        id="uppercase"
+                        class="chk-uppercase"
+                    />
+                </legend>
+
+                <legend>
+                    <label for="lowercase">Adicionar minusculas</label
+                    ><input
+                        type="checkbox"
+                        id="lowercase"
+                        class="chk-lowercase"
+                    />
+                </legend>
+
+                <legend>
+                    <label for="numbers">Adicionar números</label
+                    ><input type="checkbox" id="numbers" class="chk-numbers" />
+                </legend>
+
+                <legend>
+                    <label for="symbols">Adicionar simbolos</label
+                    ><input type="checkbox" id="symbols" class="chk-symbols" />
+                </legend>
+
+                <button class="generate-password">Gerar senha</button>
+            </form>
+        </section>
+        <script src="../dist/bundle.js"></script>
+    </body>
+</html>

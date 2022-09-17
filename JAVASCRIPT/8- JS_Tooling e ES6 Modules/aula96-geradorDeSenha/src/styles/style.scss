@@ -1,0 +1,74 @@
+:root {
+    --primary-color: #00a8ff;
+    --text-color: #fff;
+    --green: #0e7134;
+    --blue-dark: #0972a6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Work Sans', sans-serif;
+    color: var(--text-color);
+    line-height: 1.5em;
+
+    .container {
+        max-width: 700px;
+        margin: 80px auto;
+        background-color: var(--blue-dark);
+        padding: 30px;
+        border-radius: 10px;
+
+        h1 {
+            font-weight: 700;
+            font-size: 40px;
+            text-align: center;
+        }
+        .show-password {
+            font-size: 2em;
+            color: var(--text-color);
+            text-align: justify;
+            margin: 30px 0; 
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            border: none;
+
+            input[type="number"] {
+                width: 60px;
+                border: 3px solid var(--green);
+                border-radius: 5px;
+                outline: none;
+            }
+
+            input[type="checkbox"] {
+                width: 20px;
+                margin-left: 10px;
+                border: none;
+            }
+
+
+            button {
+                width: 100px;
+                background-color: var(--green);
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 1s background;
+                transition: 1s width;
+            }
+            button:hover {
+                background: #0c5428;
+                width: 130px;
+            }
+        }
+    }
+}
