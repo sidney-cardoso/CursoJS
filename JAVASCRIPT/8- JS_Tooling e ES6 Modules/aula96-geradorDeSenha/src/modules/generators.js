@@ -1,6 +1,6 @@
 const randomNumber = (min, max) => Math.floor(Math.random() * (max - min) + min)
 
-const generateNumber = () => String.fromCharCode(randomNumber(48, 58, 123))
+const generateNumber = () => String.fromCharCode(randomNumber(48, 58))
 const generateUpper = () => String.fromCharCode(randomNumber(65, 91))
 const generateLower = () => String.fromCharCode(randomNumber(97, 123))
 const symbols = '/|,.;^~\\[]{}!@#$%&*()_+=-'
