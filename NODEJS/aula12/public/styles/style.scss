@@ -1,0 +1,34 @@
+:root {
+    --primary-color: #00a8ff;
+    --text-color: #fff;
+    --green: #0e7134;
+    --blue-dark: #0972a6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Work Sans', sans-serif;
+    color: var(--text-color);
+    line-height: 1.5em;
+
+        .container {
+            max-width: 700px;
+            margin: 80px auto;
+            background-color: var(--blue-dark);
+            padding: 30px;
+            border-radius: 10px;
+        
+        h1 {
+            font-weight: 700;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+        } 
+    }
+}
