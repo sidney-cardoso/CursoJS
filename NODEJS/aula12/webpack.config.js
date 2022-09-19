@@ -1,10 +1,11 @@
-const path = require('path')
+const path = require('path') // CommonJS - Sistema de módulos do node
 
 module.exports = {
     mode: 'production',
     entry: './frontend/index.js',
+
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'public', 'dist'),
         filename: 'bundle.js'
     },
     module: {
@@ -19,7 +20,6 @@ module.exports = {
                     }
                 }
             },
-
             {
                 test: /\.scss$/,
                 exclude: /node_modules/,
